@@ -23,4 +23,3 @@ $("figure img").on("click", function(event){
     console.log(event.currentTarget.alt);
 })
 
-// test
