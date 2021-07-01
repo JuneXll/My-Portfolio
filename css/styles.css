@@ -2,3 +2,14 @@
     border: double 5px #00947e;
     padding: 2px;
   }
+
+.about-me-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* .icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+} */
