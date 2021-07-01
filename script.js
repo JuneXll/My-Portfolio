@@ -22,3 +22,5 @@ $("figure img").on("click", function(event){
     //Records the clicks
     console.log(event.currentTarget.alt);
 })
+
+// test
