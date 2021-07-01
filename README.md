@@ -1,3 +1,3 @@
 # Portfolio
 
-This is currently my most updated portfolio.
+This is my updated Portfolio.
