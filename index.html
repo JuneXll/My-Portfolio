@@ -5,17 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>June Hernandez</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS Stylings -->
+        <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-        <!-- Google fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
         <!-- Font Awesome icons -->
         <script src="https://kit.fontawesome.com/9087df0b86.js" crossorigin="anonymous"></script>
         
     </head>
     <header>
         <!-- Navbar -->
-        <nav class="breadcrumb is-fixed-top has-background-primary-dark" aria-label="breadcrumbs">
+        <nav class="pl-5 pt-3 breadcrumb has-background-primary-dark" aria-label="breadcrumbs">
             <ul>
               <li><a href="#about-me" class="has-text-light">About Me</a></li>
               <li><a href="#projects" class="has-text-light">Projects</a></li>
@@ -23,7 +22,6 @@
             </ul>
           </nav>
     </header>
-        <!-- test1 -->
         <!-- Landing Page -->
         <section class="section is-large has-background-primary-dark" id="landing-background">
             <div class="landing-page">
@@ -35,38 +33,46 @@
 
         <!-- About me section -->
         <section class="section is-large">
-            <div id="about-me">
+            <div id="about-me" class="pt-6">
                 <div id="about-me-header">
-                    <h1 class="is-size-1">About Me</h1>
+                    <h1 class="is-size-1 has-text-primary-dark">About Me</h1>
                     <hr>
                 </div>
 
-                <div class="about-me-container columns is-variable is-5">
-                    <div class="about-me block column is-5">
-                        <p>     I am a Miami based Web Developer. As a novice developer, I am continuously learning new techniques to sharpen my skills. I strive for quality and excellence. I enjoy providing structure and order to all of my projects and maximizing user experience. Working on a team is always a rewarding endeavor, but I am definitely not afraid to get down to the nitty gritty and work on projects independently. </p>
+                <div class="about-me-container columns is-variable is-5 is-flex is-justify-content-space-between">
+                    <div class="about-me block column is-5 ml-6 has-text-primary-dark">
+                        <p class="py-3 px-5">     I am a Miami based Web Developer. As a novice developer, I am continuously learning new techniques to sharpen my skills. I strive for quality and excellence. I enjoy providing structure and order to all of my projects and maximizing user experience. Working on a team is always a rewarding endeavor, but I am definitely not afraid to get down to the nitty gritty and work on projects independently. </p>
                     </div>
 
-                    <div class="about-img block column is-5">
+                    <div class="about-img block column is-5 is-justify-content-right">
                         <img src="images/profile-pic.JPG" class="has-ratio" alt="profile-img" width="290px" height="370px">
                     </div>
                 </div>
             </div>
+            <div class="tabs is-fullwidth is-right">
+                <ul>
+                    <a href="#projects">
+                        <span class="icon"><i class="fas fa-angle-down has-text-primary-dark" aria-hidden="true"></i></span>
+                        <span></span>
+                    </a>
+                </ul>
+            </div>
         </section>
 
         <!-- Project Section -->
-        <section class="section is-large">
-            <div id="projects">
+        <section class="section is-large has-background-primary-dark">
+            <div id="projects" class="pt-6">
                 <div class="project-header">
-                    <h1 class="is-size-1">Projects</h1>
+                    <h1 class="is-size-1 has-text-light">Projects</h1>
                     <hr>
                 </div>
             </div>
      
             <div class="tile is-ancestor">
                 <div class="tile is-parent">
-                    <div class="tile is-child box">
+                    <div class="tile is-child box is-clickable">
                         <p class="title">My Recipe Cookbook</p>
-                        <figure class="image is-4by3">
+                        <figure class="image is-4by3 is-clickable">
                             <img src="images/recipe.png" alt="recipe-cookbook">
                         </figure>
                         <p class="subtitle">
@@ -76,68 +82,104 @@
                 </div>
                 <div class="tile is-4 is-vertical is-parent">
                     <div class="tile is-child box">
-                        <p class="title">Atmos</p>
-                        <!-- <figure class="image is-4by3">
-                            <img src="images/atmos.png" alt="atmos">
-                        </figure> -->
-                        <p class="subtitle">
-                        JavaScript, jQuery, Bulma
-                        </p>
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-96x96 is-clickable">
+                                    <img src="images/atmos.png" alt="atmos">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                              <p class="title is-4">Atmos</p>
+                              <p class="subtitle is-6">JavaScript, jQuery, Bulma</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="tile is-child box">
-                        <p class="title">Work Planner</p>
-                        <!-- <figure class="image is-4by3">
-                            <img src="images/planner.png" alt="work-planner">
-                        </figure> -->
-                        <p class="subtitle">
-                        HTML, CSS, JavaScript
-                        </p>
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-96x96 is-clickable">
+                                    <img src="images/planner.png" alt="work-planner">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                              <p class="title is-4">Work Planner</p>
+                              <p class="subtitle is-6">HTML, CSS, JavaScript</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="tile is-4 is-vertical is-parent">
                     <div class="tile is-child box">
-                        <p class="title">Weather Dashboard</p>
-                        <!-- <figure class="image is-4by3">
-                            <img src="images/weather-dash.png" alt="weather-dash">
-                        </figure> -->
-                        <p class="subtitle">
-                        HTML, CSS, Bootstrap
-                        </p>
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-96x96 is-clickable">
+                                    <img src="images/weather-dash.png" alt="weather-dash">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                              <p class="title is-4">Weather Dashboard</p>
+                              <p class="subtitle is-6">HTML, CSS, Bootstrap</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="tile is-child box is-info">
-                        <p class="title">Password-Generator</p>
-                        <!-- <figure class="image is-4by3">
-                            <img src="images/password-generator.png" alt="password-generator">
-                        </figure> -->
-                        <p class="subtitle">
-                        Javascript
-                        </p>
+                        <div class="media">
+                            <div class="media-left">
+                                <figure class="image is-96x96 is-clickable">
+                                    <img src="images/password-generator.png" alt="password-generator">
+                                </figure>
+                            </div>
+                            <div class="media-content">
+                              <p class="title is-4">Password-Generator</p>
+                              <p class="subtitle is-6">JavaScript</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="tabs is-fullwidth is-right">
+                <ul>
+                    <a href="#about-me">
+                        <span class="icon"><i class="fas fa-angle-up has-text-light" aria-hidden="true"></i></span>
+                        <span></span>
+                    </a>
+                    <a href="#contact-me">
+                        <span class="icon"><i class="fas fa-angle-down has-text-light" aria-hidden="true"></i></span>
+                        <span></span>
+                    </a>
+                </ul>
             </div>
         </section>  
 
         <!-- Contact Me Section -->
-        <section class="section is-large">
-            <div id="contact-me">
+        <section class="section is-large has-background-warning-dark">
+            <div id="contact-me" class="pt-6">
                 <div class="contact-header">
-                    <h1 class="is-size-1">Contact Me</h1>
+                    <h1 class="is-size-1 has-text-light">Contact Me</h1>
                     <hr>
                 </div>
-                <div class="icon-container columns">
-                    <div class="icon column is-one-quarter">
-                       <a href="mailto:juniettehernandez@yahoo.com"><i class="fas fa-envelope-square fa-5x"></i></a>
+                <div class="icon-container section is-medium columns is-desktop">
+                    <div class="icon column is-one-quarter is-flex is-justify-content-space-evenly">
+                       <a href="mailto:juniettehernandez@yahoo.com"><i class="fas fa-envelope-square fa-5x has-text-light"></i></a>
+                    </div>
+                    <div class="icon column is-one-quarter is-flex is-justify-content-center">
+                       <a href="https://www.linkedin.com/in/juniettehernandez/" target="_blank"><i class="fab fa-linkedin fa-5x has-text-light"></i></a>
                    </div>
-                    <div class="icon column is-one-quarter">
-                       <a href="https://www.linkedin.com/in/juniettehernandez/" target="_blank"><i class="fab fa-linkedin fa-5x"></i></a>
+                   <div class="icon column is-one-quarter is-flex is-justify-content-center">
+                       <a href="https://github.com/JuneXll" target="_blank"><i class="fab fa-github-square fa-5x has-text-light"></i></a>
                    </div>
-                   <div class="icon column is-one-quarter">
-                       <a href="https://github.com/JuneXll" target="_blank"><i class="fab fa-github-square fa-5x"></i></a>
-                   </div>
-                   <div class="icon column is-one-quarter">
-                       <a href="https://twitter.com/JunebugXll" target="_blank"><i class="fab fa-twitter-square fa-5x"></i></a>
+                   <div class="icon column is-one-quarter is-flex is-justify-content-center">
+                       <a href="https://twitter.com/JunebugXll" target="_blank"><i class="fab fa-twitter-square fa-5x has-text-light"></i></a>
                    </div>
                </div>
+            </div>
+            <div class="tabs is-fullwidth is-right pt-5">
+                <ul>
+                    <a href="#projects">
+                        <span class="icon"><i class="fas fa-angle-up has-text-light" aria-hidden="true"></i></span>
+                        <span></span>
+                    </a>
+                </ul>
             </div>
         </section>
          <!-- jQuery script -->
