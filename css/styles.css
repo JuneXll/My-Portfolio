@@ -2,6 +2,8 @@
 .about-img img {
     border: double 5px #00947e;
     padding: 2px;
+    display: flex;
+    justify-content: center;
   }
 
 .about-me-container {
@@ -17,7 +19,3 @@
 .contact-section { 
   background-color: #056676;
 }
-
-/* .tabs ul a{
-  border-bottom-color: #00947e !important;
-} */
