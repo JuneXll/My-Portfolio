@@ -17,3 +17,8 @@
 .contact-section { 
   background-color: #056676;
 }
+
+.modal-button {
+  border: none;
+  background-color: white;
+}

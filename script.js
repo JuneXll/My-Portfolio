@@ -1,5 +1,17 @@
+$(document).ready(()=>{
+    const modals = $('.modal');
+    $('.showModal').click(function(){
+        modals.addClass('is-active');
+    })
+
+    $('.closeModal').click(function(){
+        modals.removeClass('is-active');
+    });
+});
+
+
 //Function that deploys a new window with project on image on click
-$("figure img").on("click", function(event){
+$('.launch').on("click", function(event){
     //Variables holding each projects link
     const atmos = "https://vyncent-t.github.io/atmosphere-project/";
     const recipeCookbook = "https://cryptic-dusk-68462.herokuapp.com/";
@@ -22,4 +34,9 @@ $("figure img").on("click", function(event){
     //Records the clicks
     console.log(event.currentTarget.alt);
 })
+
+
+
+
+
 
